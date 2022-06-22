@@ -1,0 +1,76 @@
+
+function ir_mes(){
+   anchoDocumento = $(window).width();
+   var scrollDiv = document.createElement("div");
+   scrollDiv.className = "scrollbar-measure";
+   document.body.appendChild(scrollDiv);
+   var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+   document.body.removeChild(scrollDiv);
+   anchoDocumento = anchoDocumento + scrollbarWidth;
+
+   var mes = $('select#sel_mes').val();
+   $('div.meses').css('display', 'none');
+   if(mes == 'todos'){
+	  if(anchoDocumento > 767){
+		 $('div#mes_all').css('display', 'block');
+	  }else{
+		 $('div.meses').css('display', 'block');
+		 $('div#mes_all').css('display', 'none');
+	  }
+   }else{
+	  $('div#mes_' + stringMes(mes).toLowerCase()).css('display', 'block');
+   }
+}
+
+function stringMes(mm){
+	if(mm == '01'){ mes = 'Enero';}
+	if(mm == '02'){ mes = 'Febrero';}
+	if(mm == '03'){ mes = 'Marzo';}
+	if(mm == '04'){ mes = 'Abril';}
+	if(mm == '05'){ mes = 'Mayo';}
+	if(mm == '06'){ mes = 'Junio';}
+	if(mm == '07'){ mes = 'Julio';}
+	if(mm == '08'){ mes = 'Agosto';}
+	if(mm == '09'){ mes = 'Septiembre';}
+	if(mm == '10'){ mes = 'Octubre';}
+	if(mm == '11'){ mes = 'Noviembre';}
+	if(mm == '12'){ mes = 'Diciembre';}
+	return mes;
+}
+
+$(window).resize(function() {
+   if($('select#sel_mes').val()=='todos') ir_mes();
+});
+
+$(document).ready(function(){
+   var sel_mes = $('select#sel_mes').val();
+   var pageYear = parseInt(anyo);
+   var currentDate = new Date();
+   var currentYear = parseInt(currentDate.getFullYear());
+   var currentMonth = parseInt(currentDate.getMonth() + 1);
+   $('select#sel_anyo').val(anyo);
+   if(currentMonth < 10){
+      currentMonth = '0' + currentMonth;
+   }
+   if(pageYear == currentYear){
+      $('div.meses').css('display', 'none');
+      $('div#mes_' + stringMes(currentMonth).toLowerCase()).css('display', 'block');
+      $('select#sel_mes').val(currentMonth);
+   }else{
+      ir_mes();
+   }
+});
+
+
+//-------- Exporta tabla a Excel --------
+function exportaExcel(parNombreHoja){
+   $('div#mes_all').css('display', 'block');
+   $('#table_export').tableExport({type:'csv',fileName:parNombreHoja+" "+$('select#sel_anyo').val()});
+   if((anchoDocumento < 768)||((anchoDocumento > 767)&&($('select#sel_mes').val()!='todos'))){
+      $('div#mes_all').css('display', 'none')
+   }
+}
+
+document.write("<script type='text/javascript' src='/valores_y_fechas/js/fileSaver.js'></script>\n");
+document.write("<script type='text/javascript' src='/valores_y_fechas/js/tableExport.js'></script>\n");
+//------ Fin Exporta tabla a Excel -------

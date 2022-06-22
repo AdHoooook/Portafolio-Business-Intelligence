@@ -1,0 +1,19 @@
+.web-sii .filtro a.exportar_tabla:link{
+   padding:8px 20px;
+   font-size:.8em;
+   border-radius:5px;
+   background-color:#eb510d;
+   float:right;
+   color:#fff;
+   text-decoration:none;
+}
+.web-sii .filtro a.exportar_tabla:hover{
+   color:#fff;
+   text-decoration:underline;
+   background-color:#eb510d;
+}
+.web-sii .filtro a.exportar_tabla:visited{
+   color:#fff;
+   text-decoration:none;
+   background-color:#eb510d;
+}

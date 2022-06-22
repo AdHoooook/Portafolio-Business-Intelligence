@@ -1,0 +1,176 @@
+function mostrarMenuIzqPie(id_mlateral){
+    document.write('<ul class="sidebar nav hidden-xs" id="menu-lateral">');
+    
+    document.write('    <li id="padre_valores_y_fechas" class="arrow-click main"><a href="/valores_y_fechas/index_valores_y_fechas.html" data-target="#valores_y_fechas" data-toggle="collapse" data-parent="#menu-lateral">Valores y fechas<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>');
+    document.write('        <ul class="nav collapse" id="valores_y_fechas">');
+    document.write(             '<li id="uf"><a href="/valores_y_fechas/uf/uf2020.htm">UF</a></li>');
+    document.write(             '<li id="dolar"><a href="/valores_y_fechas/dolar/dolar2020.htm">Dolar</a></li>');
+    document.write(             '<li id="utm"><a href="/valores_y_fechas/utm/utm2020.htm">UTM-UTA-IPC</a></li>');
+    document.write(             '<li id="dv_renta"><a href="/valores_y_fechas/renta/datos_valores_renta.html">Datos y valores de Renta</a></li>');
+    document.write(             '<li id="dv_iva"><a href="/valores_y_fechas/iva/datos_valores_iva.html">Datos y valores de IVA</a></li>');
+    document.write(             '<li id="otros_valores"><a href="/valores_y_fechas/otros_valores/otros_valores.html">Otros Valores</a></li>');
+    document.write('        </ul>');
+    document.write(    '</li>');
+
+    document.write('    <li id="padre_normativa_y_legislacion" class="arrow-click main"><a href="/normativa_legislacion/index_normativa_legislacion.html" data-target="#normativa_y_legislacion" data-toggle="collapse" data-parent="#menu-lateral">Normativa y legislación<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>');
+    document.write('        <ul class="nav collapse" id="normativa_y_legislacion">');
+    document.write(             '<li id="circulares"><a href="/normativa_legislacion/circulares/2020/indcir2020.htm">Circulares</a></li>');
+    document.write(             '<li id="resoluciones"><a href="/normativa_legislacion/resoluciones/2020/res_ind2020.htm">Resoluciones</a></li>');
+    document.write(             '<li id="resoluciones_siipers"><a href="/normativa_legislacion/resoluciones/2020/res_ind_pers2020.htm">Resoluciones de personal</a></li>');
+    document.write(             '<li><a href="https://www4.sii.cl/consultaProyectosNormativosInternet/#Inicio">Consulta pública de normas</a></li>');
+    document.write(             '<li><a target="_blank" href="https://www3.sii.cl/normaInternet/">Administrador de contenido normativo</a></li>');
+    document.write(             '<li><a href="https://www4.sii.cl/acjui/internet/#/instancia/1">Administrador de contenido de jurisprudencia</a></li>');
+    document.write(             '<li id="legislacion_tributaria"><a href="/normativa_legislacion/legislacion_tributaria.html">Legislación tributaria y convenios internacionales</a></li>');
+    document.write(             '<li id="jurisprudencia_y_tribunales"><a href="/normativa_legislacion/jurisprudencia_y_tribunales.html">Jurisprudencia y tribunales</a></li>');
+    document.write('        </ul>');
+    document.write(     '</li>');
+
+    document.write('    <li id="padre_redes_sociales" class="arrow-click main"><a class="collapsed" href="/redes_sociales/index_redes_sociales.html" data-target="#redes_sociales" data-toggle="collapse" data-parent="#menu-lateral" aria-expanded="false">Redes sociales<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>');
+    document.write('        <ul class="nav collapse" id="redes_sociales">');
+    document.write(             '<li><a href="https://www.facebook.com/impuestosinternoschile/" target="_blank">Facebook</a></li>');
+    document.write(             '<li><a href="https://twitter.com/SII_Chile" target="_blank">Twitter</a></li>');
+    document.write(             '<li><a href="https://www.youtube.com/user/sii/" target="_blank">Youtube</a></li>');
+    document.write(             '<li id="rss"><a href="/redes_sociales/rss.html">RSS</a></li>');
+    document.write(             '<li><a href="http://www.sii.cl/ayudas/apps/">APP´s</a></li>');
+    document.write('        </ul>');
+    document.write(     '</li>');
+
+    document.write('    <li id="padre_sitios_de_interes" class="arrow-click main"><a href="/sitios_de_interes/index_sitios_de_interes.html" data-target="#sitios_de_interes" data-toggle="collapse" data-parent="#menu-lateral">Sitios de interés<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>');
+    document.write('        <ul class="nav collapse" id="sitios_de_interes">');
+    document.write(             '<li id="aplicaciones_y_documentos"><a href="/sitios_de_interes/sinteres_appdoc.html">Aplicaciones y documentos</a></li>');
+    document.write(             '<li id="web_utiles"><a href="/sitios_de_interes/sinteres_wutiles.html">Web útiles</a></li>');
+    document.write(             '<li id="sitios_de_gobierno"><a href="/sitios_de_interes/sinteres_sgob.html">Sitios de gobierno relacionados</a></li>');
+    document.write(             '<li id="organismos_relacionados"><a href="/sitios_de_interes/sinteres_orgrelacionados.html">Organismos relacionados</a></li>');
+    document.write(             '<li id="asuntos_internacionales"><a href="http://www.sii.cl/asuntos_internacionales/">Asuntos internacionales</a></li>');
+    document.write('        </ul>');
+    document.write(     '</li>');
+
+    document.write('    <li id="padre_sobre_el_sii" class="arrow-click main"><a href="/sobre_el_sii/index_sobre_el_sii.html" data-target="#sobre_el_sii" data-toggle="collapse" data-parent="#menu-lateral">Sobre el SII<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>');
+    document.write('        <ul class="nav collapse" id="sobre_el_sii">');
+    document.write(             '<li id="nuestro_servicio"><a href="/sobre_el_sii/nuestro_servicio.htm">Nuestro Servicio</a></li>');
+    document.write(             '<li id="trabaja_con_nosotros"><a href="/sobre_el_sii/trabaja_con_nosotros.html">Trabaja con nosotros</a></li>');
+    document.write(             '<li id="gestion_y_estadisticas"><a href="/sobre_el_sii/gestion_y_estadisticas.html">Gestión y estadísticas</a></li>');
+    document.write(             '<li id="terminos_de_uso"><a href="/sobre_el_sii/terminos_sitio_web.html">Términos de uso del sitio web</a></li>');
+    document.write(             '<li id="recomendaciones_seguridad"><a href="/sobre_el_sii/recomendaciones_seguridad.htm">Recomendaciones de seguridad</a></li>');
+    document.write('        </ul>');
+    document.write(     '</li>');
+
+    document.write('</ul>');
+
+    var idl = id_mlateral;
+    var strMatch = /padre_/;
+    var repId = "";
+
+    if(idl.search(strMatch)){
+            $("#"+idl).closest('ul').addClass('in');
+            $("#"+idl).addClass('active');
+            repId = $("#"+idl).closest('ul').attr('id');
+            $('#padre_' + repId + ' a span').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-up');
+            $('#padre_' + repId + ' a').css('font-weight','bold');
+    }else{
+            repId = idl.replace("padre_", "");
+            $("#"+repId).addClass('in');
+            $('#' + idl + ' a span').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-up');
+            $("#" + idl + " a").css("font-weight","bold");
+    }
+
+}
+
+
+function abreMenu(id_padre, id_hijo, id_abuelo){   
+   $("#"+id_padre).addClass('in');
+   $("#"+id_padre).siblings('a').find('span').toggleClass('glyphicon-menu-down glyphicon-menu-up');
+   $("#"+id_hijo).addClass('active');
+   $("#"+id_padre).siblings('a').attr('style','color:#eb510d; border-top: 2px solid #eb510d; font-weight:bold;');
+   $("#"+id_padre).attr('style','border-bottom: 2px solid #eb510d;');
+   $("#"+id_abuelo).addClass('in');
+}
+
+function writeOptionsYears(parId){
+	var desde = 2013;
+	var hasta;
+   switch(parId) {
+      case 0:   // Circulares
+         hasta = 2020;
+         break;
+      case 1:   // Resoluciones
+         hasta = 2020;
+         break;
+      case 2:   // jurisprudencia administrativa (renta)
+		   desde = 2009
+         hasta = 2020;
+         break;
+      case 3:   // jurisprudencia administrativa (ventas y servicios)
+		   desde = 2009
+         hasta = 2020;
+         break;
+      case 4:   // jurisprudencia administrativa (otras)
+		   desde = 2009
+         hasta = 2020;
+         break;
+      case 12:   // UTM - UTA - IPC
+         hasta = 2020;
+         break;
+      case 18:   // Resoluciones de personal
+         hasta = 2020;
+         break;
+      case 23:   // Actos y Resoluciones de las direcciones regionales y grandes contribuyentes
+         hasta = 2020;
+         break;
+      case 30:  // Impuesto Único de Segunda Categoría (Art.52)
+		   desde = 2017;
+         hasta = 2020;
+         break;
+      case 101:  // impuesto único segunda categoría
+         hasta = 2020;
+         break;
+      case 102:  // Odepa
+         hasta = 2020;
+         break;
+      case 103:  // Fondo de Estabilización de Precios del Petróleo
+         hasta = 2020;
+         break;
+      case 104:  // Dólar
+         hasta = 2020;
+         break;
+      case 106:  // U. F.
+         hasta = 2020;
+         break;
+      case 108:  // corrección monetaria
+         hasta = 2020;
+         break;
+      case 2012:  // Impuesto al petróleo (Componentes base y variable) - Mepco
+         hasta = 2020;
+         break;
+   }
+
+   for (var i = hasta; i >= desde ; i--) {
+	   document.write("   <option value='"+i+"'>"+i+"</option>");
+   }
+}
+
+
+(function() {
+   var script = document.createElement("SCRIPT");
+   script.src = '/js/jquery-1.4.2.js';
+   script.type = 'text/javascript';
+   script.onload = function() {
+      var $ = window.jQuery;
+      $(document).ready(function() {
+         $('.web-sii #menu-lateral li.main').click(function() {
+            var $nclase = $(this).attr('id');
+            $nclase = $nclase.replace("padre_", "");
+            if($('.web-sii #menu-lateral ul#' + $nclase).hasClass('in'))
+            {
+               event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+               var $selClosedMain = $(this).find('span');
+               if($selClosedMain.hasClass('glyphicon-menu-up')){
+                  $selClosedMain.removeClass('glyphicon-menu-up');
+                  $selClosedMain.addClass('glyphicon-menu-down');
+   			   }
+            }
+         });
+      });
+   };
+   document.getElementsByTagName("head")[0].appendChild(script);
+})();

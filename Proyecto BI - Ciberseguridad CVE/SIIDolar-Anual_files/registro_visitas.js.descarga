@@ -1,0 +1,40 @@
+
+
+function loadScript(url, callback)
+{
+    // Adding the script tag to the head as suggested before
+    var head = document.head;
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url;
+
+    // Then bind the event to the callback function.
+    // There are several events for cross browser compatibility.
+    script.onreadystatechange = callback;
+    script.onload = callback;
+
+    // Fire the loading
+    head.appendChild(script);
+}
+
+var myPrettyCode = function() {
+   // Here, do whatever you want
+   //console.log("Script cargado");
+  // alert("Hello world!");
+};
+
+if ((typeof swRegVisitas == 'undefined')||(swRegVisitas == 0)){
+   swRegVisitas = 1;
+   //document.write("<script src='//assets.adobedtm.com/launch-EN2b1e36bbb6d548dfa15c1b55cb71b120.min.js'></script>\n");
+   
+   loadScript("https://assets.adobedtm.com/launch-EN2b1e36bbb6d548dfa15c1b55cb71b120.min.js", myPrettyCode);
+}
+
+
+function linkVisita(url, metaDato, target)
+{
+   if (target=='b')
+      window.open(url);
+   else
+      window.location.href=url;
+}
