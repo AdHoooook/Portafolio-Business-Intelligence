@@ -2,7 +2,4 @@
 
 ![EJEMPLOS DE VISUALIZACIONES & PROYECTOS BI]
 
-[img](https://github.com/AdHoooook/Portafolio-Business-Intelligence/blob/main/Proyecto%20BI%20-%20Falabella%20KPI/PROYECTO_BI1.PNG)[/img]
-
-
-(https://github.com/AdHoooook/Portafolio-Business-Intelligence/blob/main/Proyecto%20BI%20-%20Falabella%20KPI/PROYECTO_BI3.PNG)
+[Proyecto BI - Falabella KPI](https://github.com/AdHoooook/Portafolio-Business-Intelligence/blob/main/Proyecto%20BI%20-%20Falabella%20KPI/PROYECTO_BI1.PNG)(https://github.com/AdHoooook/Portafolio-Business-Intelligence/blob/main/Proyecto%20BI%20-%20Falabella%20KPI/PROYECTO_BI3.PNG)
