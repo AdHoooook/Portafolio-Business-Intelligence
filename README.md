@@ -1,7 +1,7 @@
-# Bienvenidxs a mi repositorio de Proyectos BI!
+# Bienvenidxs a mi portafolio de Proyectos BI!
 
-### Acá encontrarás mis principales proyectos dedicados al Business Inteligence (BI)
-### Repositorio modalidad portafolio con propósitos académicos y laborales
+### - Acá encontrarás mis principales proyectos dedicados al Business Inteligence (BI)
+### - Portafolio con propósitos académicos y laborales
 
 #### [Proyecto BI - Ciberseguridad CVE](https://github.com/AdHoooook/Portafolio-Business-Intelligence/tree/main/Proyecto%20BI%20-%20Ciberseguridad%20CVE)
 
